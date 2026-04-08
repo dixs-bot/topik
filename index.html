@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="meta-desc" name="description" content="BeritaKini - Portal berita terkini, terpercaya dari Indonesia dan Dunia">
+    <meta id="meta-keys" name="keywords" content="berita, terkini, nasional, internasional, ekonomi, teknologi">
+    <meta name="author" content="BeritaKini">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta id="og-title" property="og:title" content="BeritaKini - Portal Berita Terkini">
+    <meta id="og-desc" property="og:description" content="Portal berita terkini, terpercaya dari Indonesia dan Dunia">
+    <meta id="og-img" property="og:image" content="https://picsum.photos/seed/bk-og/1200/630.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="BeritaKini">
+    <meta id="tc-card" name="twitter:card" content="summary_large_image">
+    <meta id="tc-title" name="twitter:title" content="BeritaKini - Portal Berita Terkini">
+    <meta id="tc-desc" name="twitter:description" content="Portal berita terkini, terpercaya dari Indonesia dan Dunia">
+    <meta id="tc-img" name="twitter:image" content="https://picsum.photos/seed/bk-og/1200/630.jpg">
+    <link id="canonical" rel="canonical" href="">
+    <title>BeritaKini - Portal Berita Terkini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google AdSense placeholder — ganti data-ad-client dengan ID Anda -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+    <script id="schema-org" type="application/ld+json"></script>
+    <script>
+        tailwind.config = {
+            darkMode:'class',
+            theme:{extend:{
+                colors:{brand:{DEFAULT:'#C62828',light:'#EF5350',dark:'#8E0000',bg:'#FFEBEE'},surface:{DEFAULT:'#fff',alt:'#f5f5f5',dark:'#0c0c14',card:'#13131f',border:'#1f1f30'},ink:{DEFAULT:'#1a1a1a',muted:'#6b7280',dark:'#e4e4e7',mutedDark:'#9ca3af'}},
+                fontFamily:{headline:['Lora','serif'],body:['Plus Jakarta Sans','sans-serif']},
+                animation:{ticker:'ticker 50s linear infinite',fadeUp:'fadeUp .45s ease-out',slideIn:'slideIn .3s ease-out',pulse2:'pulse2 2s ease-in-out infinite'},
+                keyframes:{ticker:{'0%':{transform:'translateX(0)'},'100%':{transform:'translateX(-50%)'}},fadeUp:{'0%':{opacity:0,transform:'translateY(18px)'},'100%':{opacity:1,transform:'translateY(0)'}},slideIn:{'0%':{transform:'translateX(100%)'},'100%':{transform:'translateX(0)'}},pulse2:{'0%,100%':{opacity:1},'50%':{opacity:.5}}}
+            }}
+        }
+    </script>
+    <style>
+        *{scrollbar-width:thin;scrollbar-color:#C62828 transparent}
+        ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:#C62828;border-radius:3px}
+        .line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+        .line-clamp-3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+        .ticker-track{display:flex;white-space:nowrap}.ticker-track span{flex-shrink:0;padding:0 2rem}
+        .nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#C62828;transition:width .3s}.nav-link:hover::after,.nav-link.active::after{width:100%}
+        .ac:hover img{transform:scale(1.05)}.ac img{transition:transform .5s}
+        .hero-ov{background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.08) 100%)}
+        body{font-family:'Plus Jakarta Sans',sans-serif}
+        @media(max-width:640px){.hero-ov{background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,0,.5) 60%,rgba(0,0,0,.15) 100%)}}
+        .cat-nasional{--cat:#C62828}.cat-internasional{--cat:#1565C0}.cat-ekonomi{--cat:#2E7D32}.cat-teknologi{--cat:#6A1B9A}.cat-olahraga{--cat:#E65100}.cat-hiburan{--cat:#AD1457}.cat-lifestyle{--cat:#00838F}.cat-uncategorized{--cat:#6b7280}
+        .cb{background:var(--cat);color:#fff;font-size:.62rem;padding:2px 7px;border-radius:3px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+        .sb{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;transition:transform .2s,box-shadow .2s}.sb:hover{transform:scale(1.15);box-shadow:0 4px 12px rgba(0,0,0,.2)}
+        .ad-wrap{position:relative;border:1px dashed transparent;transition:border-color .3s}.ad-wrap:hover{border-color:rgba(198,40,40,.3)}
+        .ad-label{position:absolute;top:4px;right:6px;font-size:8px;text-transform:uppercase;letter-spacing:.8px;color:#9ca3af;z-index:2;pointer-events:none}
+        .ext-badge{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.65);color:#fff;font-size:9px;padding:2px 7px;border-radius:4px;backdrop-filter:blur(4px);display:flex;align-items:center;gap:3px}
+        .wp-status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;padding:8px 18px;border-radius:999px;font-size:11px;font-weight:600;pointer-events:none;opacity:0;transition:opacity .3s}
+        .wp-status.show{opacity:1}
+        .wp-status.ok{background:#065f46;color:#6ee7b7}.wp-status.err{background:#7f1d1d;color:#fca5a5}.wp-status.load{background:#1e3a5f;color:#93c5fd}
+    </style>
+</head>
+<body class="font-body bg-surface dark:bg-surface-dark text-ink dark:text-ink-dark transition-colors duration-300 min-h-screen flex flex-col">
+
+<!-- WP Connection Status -->
+<div id="wp-status" class="wp-status"></div>
+
+<!-- Ticker -->
+<div class="bg-brand dark:bg-brand-dark text-white overflow-hidden h-8 flex items-center relative z-50">
+    <div class="bg-brand-dark dark:bg-black/40 h-full flex items-center px-3 sm:px-4 font-bold text-xs tracking-wider shrink-0 z-10"><span class="inline-block w-2 h-2 bg-white rounded-full mr-2 animate-pulse2"></span>BREAKING</div>
+    <div class="overflow-hidden flex-1"><div class="ticker-track animate-ticker" id="ticker-track"></div></div>
+</div>
+
+<!-- Header -->
+<header id="main-header" class="bg-white dark:bg-surface-dark border-b border-gray-200 dark:border-surface-border sticky top-0 z-40 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-14 sm:h-16">
+            <a href="#/" class="flex items-center gap-2 shrink-0" aria-label="Home"><div class="w-8 h-8 sm:w-9 sm:h-9 bg-brand rounded-lg flex items-center justify-center"><span class="text-white font-extrabold text-sm sm:text-base font-headline">B</span></div><span class="text-xl sm:text-2xl font-extrabold text-brand dark:text-brand-light font-headline tracking-tight">BeritaKini</span></a>
+            <div class="hidden md:flex items-center flex-1 max-w-md mx-8"><div class="relative w-full"><input type="text" id="search-d" placeholder="Cari berita..." class="w-full h-10 pl-10 pr-4 rounded-full bg-surface-alt dark:bg-surface-card border border-gray-200 dark:border-surface-border text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition" aria-label="Cari berita"><i class="fas fa-search absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i></div></div>
+            <div class="flex items-center gap-1 sm:gap-2">
+                <button onclick="openSearch()" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-surface-card transition"><i class="fas fa-search text-gray-600 dark:text-ink-mutedDark"></i></button>
+                <button onclick="toggleDark()" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-surface-card transition" id="dm-btn"><i class="fas fa-moon text-gray-600 dark:text-ink-mutedDark" id="dm-icon"></i></button>
+                <button onclick="navigate('/admin')" class="hidden sm:flex items-center gap-1.5 h-9 px-4 rounded-full bg-brand hover:bg-brand-dark text-white text-xs font-semibold transition"><i class="fas fa-user-shield text-[10px]"></i>Admin</button>
+                <button onclick="navigate('/admin')" class="sm:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-surface-card transition"><i class="fas fa-user-shield text-gray-600 dark:text-ink-mutedDark text-sm"></i></button>
+                <button onclick="toggleMobile()" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-surface-card transition"><i class="fas fa-bars text-gray-600 dark:text-ink-mutedDark"></i></button>
+            </div>
+        </div>
+        <nav class="hidden lg:flex items-center gap-1 h-11 -mb-px overflow-x-auto" id="d-nav"></nav>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mob-menu" class="fixed inset-0 z-50 hidden"><div class="absolute inset-0 bg-black/50" onclick="toggleMobile()"></div><div class="absolute right-0 top-0 bottom-0 w-72 bg-white dark:bg-surface-dark shadow-2xl animate-slideIn flex flex-col"><div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-surface-border"><span class="font-bold text-lg text-brand dark:text-brand-light">Menu</span><button onclick="toggleMobile()" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-surface-card"><i class="fas fa-times"></i></button></div><div class="flex-1 overflow-y-auto p-4" id="m-nav"></div></div></div>
+
+<!-- Search Overlay -->
+<div id="s-ov" class="fixed inset-0 z-50 hidden"><div class="absolute inset-0 bg-black/60" onclick="closeSearch()"></div><div class="relative max-w-2xl mx-auto mt-20 px-4 animate-fadeUp"><div class="bg-white dark:bg-surface-card rounded-2xl shadow-2xl overflow-hidden"><div class="flex items-center p-4 border-b border-gray-200 dark:border-surface-border"><i class="fas fa-search text-brand mr-3"></i><input type="text" id="s-in" placeholder="Ketik kata kunci..." class="flex-1 bg-transparent text-lg focus:outline-none dark:text-ink-dark" aria-label="Cari berita"><button onclick="closeSearch()" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-surface-border"><i class="fas fa-times text-gray-400"></i></button></div><div id="s-res" class="max-h-96 overflow-y-auto"></div></div></div></div>
+
+<!-- Main Content -->
+<main class="flex-1" id="mc"></main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 dark:bg-black text-gray-300 mt-12" id="ft"></footer>
+
+<!-- Back to Top -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 bg-brand hover:bg-brand-dark text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-30"><i class="fas fa-chevron-up text-sm"></i></button>
+
+<!-- Toast -->
+<div id="tc" class="fixed bottom-6 left-6 z-50 flex flex-col gap-2"></div>
+
+<!-- Admin Modal -->
+<div id="am" class="fixed inset-0 z-50 hidden"><div class="absolute inset-0 bg-black/60" onclick="closeAM()"></div><div class="relative max-w-3xl mx-auto mt-8 mb-8 px-4 max-h-[calc(100vh-4rem)] overflow-y-auto" id="am-c"></div></div>
+
+<script>
+/* ========================================================================
+   KONFIGURASI UTAMA — EDIT BAGIAN INI SAJA
+   ======================================================================== */
+
+// WORDPRESS REST API
+// Kosongkan = pakai data dummy. Isi URL WordPress Anda = pakai API langsung.
+const WP_CONFIG = {
+    url: '',                          // Contoh: 'https://situsanda.com' (tanpa slash akhir)
+    siteName: 'BeritaKini',
+    perPage: 12,
+    cacheMs: 5 * 60 * 1000            // Cache 5 menit
+};
+
+// IKLAN BANNER — GANTI LINK & GAMBAR DI SINI
+const ADS = {
+    top:    { on:true, img:'https://picsum.photos/seed/ad-top2/728/90',    link:'https://example.com/iklan-atas',    alt:'Iklan Atas',    bg:'#111827' },
+    side:   { on:true, img:'https://picsum.photos/seed/ad-side2/300/250',  link:'https://example.com/iklan-sidebar', alt:'Iklan Sidebar', bg:'#0f172a' },
+    mid:    { on:true, img:'https://picsum.photos/seed/ad-mid2/728/90',    link:'https://example.com/iklan-tengah',  alt:'Iklan Tengah',  bg:'#111827' },
+    bot:    { on:true, img:'https://picsum.photos/seed/ad-bot2/728/90',    link:'https://example.com/iklan-bawah',   alt:'Iklan Bawah',   bg:'#0f172a' },
+    foot:   { on:true, img:'https://picsum.photos/seed/ad-foot2/1200/90',  link:'https://example.com/iklan-footer',  alt:'Iklan Footer',  bg:'#111827' }
+};
+
+// GOOGLE ADSENSE — Aktifkan & ganti slot ID
+const ADSENSE = {
+    enabled: false,
+    client: 'ca-pub-XXXXXXXXXXXXXXXX',   // Ganti dengan ID AdSense Anda
+    slots: {
+        top:   { id: '1234567890', format: 'horizontal'  },
+        side:  { id: '1234567891', format: 'vertical'    },
+        mid:   { id: '1234567892', format: 'horizontal'  },
+        bot:   { id: '1234567893', format: 'horizontal'  }
+    }
+};
+
+/* ========================================================================
+   DATA DUMMY (FALLBACK)
+   ======================================================================== */
+const CATS = [
+    {id:1,name:'Nasional',slug:'nasional',icon:'fa-landmark'},
+    {id:2,name:'Internasional',slug:'internasional',icon:'fa-globe'},
+    {id:3,name:'Ekonomi',slug:'ekonomi',icon:'fa-chart-line'},
+    {id:4,name:'Teknologi',slug:'teknologi',icon:'fa-microchip'},
+    {id:5,name:'Olahraga',slug:'olahraga',icon:'fa-futbol'},
+    {id:6,name:'Hiburan',slug:'hiburan',icon:'fa-film'},
+    {id:7,name:'Lifestyle',slug:'lifestyle',icon:'fa-heart'}
+];
+
+const DUMMY = [
+    {id:1,title:'Pemerintah Resmikan Proyek Infrastruktur Terbesar di IKN Nusantara',summary:'Presiden meresmikan pembangunan jalan tol dan fasilitas publik senilai Rp 120 triliun di IKN sebagai tonggak sejarah baru pembangunan Indonesia.',content:'<p>Jakarta — Presiden RI meresmikan pembangunan tahap kedua infrastruktur utama di Ibu Kota Nusantara (IKN), Kalimantan Timur. Proyek senilai Rp 120 triliun ini mencakup jalan tol 45 kilometer, jembatan penghubung, serta pusat pemerintahan terintegrasi berkonsep kota hijau.</p><p>Menteri PUPR menyatakan pembangunan melibatkan lebih dari 50.000 pekerja. "Ini proyek infrastruktur terbesar dalam sejarah Indonesia," ujarnya.</p><p>Investasi swasta di IKN hingga Q1 2025 mencapai Rp 35 triliun dengan potensi peningkatan signifikan dalam dua tahun ke depan.</p>',slug:'infrastruktur-terbesar-ikn',category:1,categories:[1],tags:[{name:'IKN'},{name:'Infrastruktur'},{name:'Pembangunan'}],author:{name:'Ahmad Rizky',slug:'ahmad-rizky'},date:'2025-05-12T08:30:00',featured_media:'https://picsum.photos/seed/ikn2/800/500',views:45200,headline:true,breaking:true,ext_link:''},
+    {id:2,title:'Gempa M6.2 Guncang Sulawesi Tengah, Tidak Berpotensi Tsunami',summary:'BMKG mencatat gempa 6.2 SR di Sulawesi Tengah. Belum ada laporan korban jiwa atau kerusakan signifikan.',content:'<p>Palu — BMKG melaporkan gempa 6.2 SR mengguncang Donggala, Sulawesi Tengah, pada kedalaman 10 km.</p><p>BPBD memastikan belum ada korban jiwa. Warga pesisir sudah tenang setelah konfirmasi tidak ada potensi tsunami.</p><p>BMKG mengimbau masyarakat waspada gempa susulan dalam beberapa jam ke depan.</p>',slug:'gempa-sulteng-62',category:1,categories:[1],tags:[{name:'Gempa'},{name:'BMKG'}],author:{name:'Siti Nurhaliza',slug:'siti-nurhaliza'},date:'2025-05-13T14:30:00',featured_media:'https://picsum.photos/seed/gempa2/800/500',views:38700,headline:false,breaking:true,ext_link:''},
+    {id:3,title:'KPK Tetapkan Tiga Tersangka Kasus Korupsi Proyek Pertanian',summary:'KPK menetapkan tiga tersangka baru dalam kasus korupsi proyek pertanian senilai Rp 500 miliar.',content:'<p>Jakarta — KPK menetapkan tiga tersangka dalam kasus dugaan korupsi pengadaan pupuk dan alat pertanian di Kementan 2023-2024. Kerugian negara diperkirakan Rp 500 miliar.</p><p>"Tersangka mengatur proses tender agar dimenangkan perusahaan tertentu," ujar Wakil Ketua KPK.</p>',slug:'kpk-korupsi-pertanian',category:1,categories:[1],tags:[{name:'KPK'},{name:'Korupsi'}],author:{name:'Budi Santoso',slug:'budi-santoso'},date:'2025-05-11T10:15:00',featured_media:'https://picsum.photos/seed/kpk2/800/500',views:52100,headline:false,breaking:false,ext_link:''},
+    {id:4,title:'PBB Gelar Sidang Darurat Tanggapi Eskalasi Konflik Timur Tengah',summary:'Dewan Keamanan PBB mengadakan sidang darurat untuk membahas eskalasi konflik yang mengancam stabilitas kawasan.',content:'<p>New York — Dewan Keamanan PBB gelar sidang darurat menanggapi eskalasi konflik bersenjata di Timur Tengah.</p><p>Sekretaris Jenderal PBB menyerukan semua pihak menahan diri dan kembali ke meja perundingan.</p>',slug:'pbb-sidang-darurat-timur-tengah',category:2,categories:[2],tags:[{name:'PBB'},{name:'Timur Tengah'}],author:{name:'Diana Putri',slug:'diana-putri'},date:'2025-05-14T09:00:00',featured_media:'https://picsum.photos/seed/pbb2/800/500',views:41300,headline:true,breaking:true,ext_link:''},
+    {id:5,title:'Uni Eropa Sahkan Regulasi AI Paling Komprehensif di Dunia',summary:'EU AI Act resmi disahkan Parlemen Eropa, mengatur penggunaan kecerdasan buatan di seluruh wilayah UE.',content:'<p>Brussel — EU AI Act, regulasi AI paling komprehensif di dunia, berlaku efektif 2026 dengan masa transisi bertahap.</p><p>Sistem AI dikategorikan berdasarkan risiko. Pengenalan wajah real-time dibatasi ketat.</p>',slug:'eu-ai-act-disahkan',category:2,categories:[2],tags:[{name:'Uni Eropa'},{name:'AI'},{name:'Regulasi'}],author:{name:'Marco Valentino',slug:'marco-valentino'},date:'2025-05-15T11:45:00',featured_media:'https://picsum.photos/seed/euai2/800/500',views:29800,headline:false,breaking:false,ext_link:''},
+    {id:6,title:'Rupiah Menguat ke Level 15.200 Setelah Keputusan The Fed',summary:'Rupiah menguat signifikan ke Rp 15.200/USD setelah sinyal dovish dari Federal Reserve.',content:'<p>Jakarta — Rupiah menguat ke level terkuat dalam 6 bulan setelah The Fed memberikan sinyal pemangkasan suku bunga.</p><p>Gubernur BI menyatakan penguatan mencerminkan fundamental ekonomi yang solid. Ekonom memproyeksikan Rupiah bisa tembus Rp 15.000.</p>',slug:'rupiah-menguat-the-fed',category:3,categories:[3],tags:[{name:'Rupiah'},{name:'The Fed'}],author:{name:'Fitri Handayani',slug:'fitri-handayani'},date:'2025-05-16T09:30:00',featured_media:'https://picsum.photos/seed/rupiah2/800/500',views:33500,headline:true,breaking:false,ext_link:''},
+    {id:7,title:'Bank Indonesia Pertahankan Suku Bunga Acuan 6 Persen',summary:'BI pertahankan BI7DRR di 6% guna menjaga stabilitas makroekonomi.',content:'<p>Jakarta — BI mempertahankan suku bunga acuan di 6%. "Ruang penurunan masih terbuka, tapi kami ingin pastikan inflasi terkendali berkelanjutan," jelas Gubernur BI.</p>',slug:'bi-bunga-6-persen',category:3,categories:[3],tags:[{name:'Bank Indonesia'},{name:'Suku Bunga'}],author:{name:'Rina Wulandari',slug:'rina-wulandari'},date:'2025-05-15T15:00:00',featured_media:'https://picsum.photos/seed/bi2/800/500',views:27600,headline:false,breaking:false,ext_link:''},
+    {id:8,title:'Startup Fintech Indonesia Raih Pendanaan Seri C $80 Juta',summary:'Platform pembayaran digital meraih pendanaan Seri C yang dipimpin Sequoia Capital Asia.',content:'<p>Jakarta — PayNow Indonesia raih pendanaan Seri C USD 80 juta dari Sequoia Capital Asia dan SoftBank Vision Fund. Dana akan memperluas layanan ke 200 kota baru.</p>',slug:'fintech-seri-c-80-juta',category:3,categories:[3],tags:[{name:'Startup'},{name:'Fintech'}],author:{name:'Denny Setiawan',slug:'denny-setiawan'},date:'2025-05-13T11:00:00',featured_media:'https://picsum.photos/seed/fin2/800/500',views:19200,headline:false,breaking:false,ext_link:''},
+    {id:9,title:'Apple Perkenalkan Chip M5 Ultra untuk AI Generatif',summary:'Chip M5 Ultra berproses 2nm mampu jalankan LLM 70B parameter secara lokal tanpa internet.',content:'<p>Cupertino — Apple perkenalkan M5 Ultra dengan 40 miliar transistor. CEO Tim Cook menyebutnya "lompatan generasi dalam komputasi personal."</p><p>Analis IDC memperkirakan chip ini mempercepat adopsi AI di kalangan konsumen.</p>',slug:'apple-m5-ultra-ai',category:4,categories:[4],tags:[{name:'Apple'},{name:'Chip'},{name:'AI'}],author:{name:'Reza Mahendra',slug:'reza-mahendra'},date:'2025-05-13T02:00:00',featured_media:'https://picsum.photos/seed/apple2/800/500',views:67800,headline:true,breaking:false,ext_link:''},
+    {id:10,title:'Indonesia Sukses Luncurkan Satelit Nusantara-3 dari Biak',summary:'Satelit komunikasi generasi terbaru diluncurkan menggunakan roket domestik — pencapaian historis.',content:'<p>Biak — Nusantara-3 berhasil diluncurkan dari Pusat Antariksa Biak menggunakan roket peluncur domestik. Kapasitas throughput 150 Gbps melayani 10.000+ desa di wilayah 3T.</p><p>Proyek senilai Rp 4,5 triliun melibatkan 300+ engineer Indonesia. Operasi penuh Agustus 2025.</p>',slug:'satelit-nusantara-3-biak',category:4,categories:[4],tags:[{name:'Satelit'},{name:'BRIN'},{name:'Antariksa'}],author:{name:'Hendra Wijaya',slug:'hendra-wijaya'},date:'2025-05-14T06:15:00',featured_media:'https://picsum.photos/seed/sat2/800/500',views:44100,headline:false,breaking:true,ext_link:''},
+    {id:11,title:'Kebocoran Data 15 Juta Pengguna E-Commerce Dijual di Dark Web',summary:'Database berisi informasi pribadi 15 juta pengguna e-commerce ditemukan dijual seharga USD 5.000.',content:'<p>Jakarta — Tim CyberDefense Indonesia temukan database 15 juta pengguna e-commerce di forum dark web. Data meliputi nama, email, nomor telepon, dan alamat.</p><p>Pakar keamanan siber menekankan pentingnya penerapan standar keamanan data yang lebih ketat.</p>',slug:'kebocoran-data-ecommerce',category:4,categories:[4],tags:[{name:'Keamanan Siber'},{name:'Data Pribadi'}],author:{name:'Lina Kusuma',slug:'lina-kusuma'},date:'2025-05-12T13:45:00',featured_media:'https://picsum.photos/seed/data2/800/500',views:56300,headline:false,breaking:false,ext_link:''},
+    {id:12,title:'Timnas Indonesia U-23 Lolos Semifinal Piala Asia',summary:'Garuda Muda lolos semifinal dengan rekor sempurna setelah kalahkan Korea Selatan 2-1.',content:'<p>Doha — Timnas Indonesia U-23 catat sejarah lolos semifinal Piala Asia U-23 sebagai juara grup dengan tiga kemenangan. Gol di menit 34 dan penalti menit 78 menjadi pembeda.</p><p>PSSI sampaikan apresiasi tinggi dan akan dukung penuh persiapan semifinal.</p>',slug:'timnas-u23-semifinal-piala-asia',category:5,categories:[5],tags:[{name:'Timnas'},{name:'Piala Asia'},{name:'Sepak Bola'}],author:{name:'Fajar Nugroho',slug:'fajar-nugroho'},date:'2025-05-15T22:30:00',featured_media:'https://picsum.photos/seed/timnas2/800/500',views:89200,headline:true,breaking:false,ext_link:''},
+    {id:13,title:'Jonatan Christie Pertahankan Gelar Juara All England',summary:'Tunggal putra Indonesia kalahkan Viktor Axelsen straight set di final All England 2025.',content:'<p>Birmingham — Jojo menang 21-18, 21-16 atas Axelsen di Utilita Arena. "All England selalu spesial bagi saya," ujar Jojo.</p><p>Pelatih PBSI puji mentalitas Jojo yang semakin matang di level tertinggi bulutangkis dunia.</p>',slug:'jonatan-christie-all-england',category:5,categories:[5],tags:[{name:'Bulutangkis'},{name:'All England'}],author:{name:'Wulan Sari',slug:'wulan-sari'},date:'2025-05-18T20:00:00',featured_media:'https://picsum.photos/seed/jojo2/800/500',views:72100,headline:false,breaking:false,ext_link:''},
+    {id:14,title:'Film Indonesia Raih Grand Prix di Festival Film Cannes',summary:'Film "Tanah Air" karya Kamila Andini meraih Grand Prix di Cannes 2025 — pencapaian bersejarah.',content:'<p>Cannes — "Tanah Air" menjadi film Indonesia pertama yang memenangkan Grand Prix di Cannes. Film tentang masyarakat adat Papua ini dipuji visualnya yang memukau.</p><p>Menteri Parekraf langsung sampaikan ucapan selamat. Diharapkan jadi momentum kebangkitan perfilman Indonesia.</p>',slug:'film-indonesia-grand-prix-cannes',category:6,categories:[6],tags:[{name:'Film'},{name:'Cannes'},{name:'Sinema Indonesia'}],author:{name:'Nadia Safira',slug:'nadia-safira'},date:'2025-05-17T23:00:00',featured_media:'https://picsum.photos/seed/cannes2/800/500',views:58400,headline:true,breaking:false,ext_link:''},
+    {id:15,title:'Konser Coldplay di GBK Pecahkan Rekor Penonton se-Asia',summary:'Tiga malam konser di GBK mendatangkan 120.000 penonton — rekor konser terbesar di Asia Tenggara.',content:'<p>Jakarta — Coldplay bawakan pertunjukan spektakuler dengan panggung 360 derajat dan laser show. Tiket habis terjual dalam 30 menit.</p>',slug:'coldplay-gbk-rekor-penonton',category:6,categories:[6],tags:[{name:'Konser'},{name:'Coldplay'},{name:'Musik'}],author:{name:'Ricky Pratama',slug:'ricky-pratama'},date:'2025-05-16T01:00:00',featured_media:'https://picsum.photos/seed/cold2/800/500',views:95300,headline:false,breaking:false,ext_link:''},
+    {id:16,title:'Tren Hidup Minimalis Digemari 67% Generasi Muda Indonesia',summary:'Survei Nielsen menunjukkan mayoritas gen muda mengadopsi gaya hidup minimalis didorong kesadaran lingkungan.',content:'<p>Jakarta — 67% usia 18-35 tahun mulai hidup minimalis. Penjualan produk second-hand tumbuh 45%, konten decluttering rata-rata jutaan views.</p>',slug:'tren-minimalis-generasi-muda',category:7,categories:[7],tags:[{name:'Minimalis'},{name:'Gaya Hidup'}],author:{name:'Anisa Rahma',slug:'anisa-rahma'},date:'2025-05-11T08:00:00',featured_media:'https://picsum.photos/seed/min2/800/500',views:23800,headline:false,breaking:false,ext_link:''},
+    {id:17,title:'5 Destinasi Wisata Tersembunyi Indonesia Timur yang Viral',summary:'Pantai Liang Ambon, Danau Tiu Kele Flores, dan tiga destinasi lainnya ramai di media sosial.',content:'<p>Makassar — Lima destinasi tersembunyi paling banyak dibicarakan di media sosial. Pemerintah daerah berlomba benahi infrastruktur wisata.</p>',slug:'wisata-tersembunyi-indonesia-timur',category:7,categories:[7],tags:[{name:'Wisata'},{name:'Indonesia Timur'},{name:'Traveling'}],author:{name:'Dwi Astuti',slug:'dwi-astuti'},date:'2025-05-13T07:15:00',featured_media:'https://picsum.photos/seed/wis2/800/500',views:31500,headline:false,breaking:false,ext_link:''},
+    {id:18,title:'Kopi Indonesia Tembus 35 Negara, Nilai Ekspor Rp 8 Triliun',summary:'AEKI catatkan rekor ekspor kopi ke 35 negara naik 28%. Target jadi produsen specialty no.2 dunia 2027.',content:'<p>Jakarta — Kopi Gayo, Toraja, Kintamani, dan Flores jadi primadona. "Kopi Indonesia bukan lagi komoditas bulk, tapi produk premium," kata Ketua AEKI.</p>',slug:'kopi-indonesia-ekspor-35-negara',category:7,categories:[7],tags:[{name:'Kopi'},{name:'Ekspor'},{name:'UMKM'}],author:{name:'Bayu Prakoso',slug:'bayu-prakoso'},date:'2025-05-15T10:30:00',featured_media:'https://picsum.photos/seed/kopi2/800/500',views:28900,headline:false,breaking:false,ext_link:''}
+];
+
+const BREAKING = ['Gempa M6.2 Guncang Sulawesi Tengah','Timnas U-23 Lolos Semifinal Piala Asia','Indonesia Luncurkan Satelit Nusantara-3','PBB Sidang Darurat Konflik Timur Tengah','Film Indonesia Raih Grand Prix di Cannes'];
+const TRENDING = [{tag:'Timnas U-23',n:'89.2K'},{tag:'IKN Nusantara',n:'67.8K'},{tag:'Apple M5',n:'54.3K'},{tag:'Film Cannes',n:'48.1K'},{tag:'Rupiah Menguat',n:'42.7K'},{tag:'Coldplay',n:'38.5K'},{tag:'AI Act EU',n:'31.2K'},{tag:'Kopi Indonesia',n:'27.9K'}];
+
+/* ========================================================================
+   STATE
+   ======================================================================== */
+let S = { page:'home', cat:null, slug:null, q:'', dark:localStorage.getItem('bk-d')==='true', admin:localStorage.getItem('bk-a')==='true', count:12, wpOk:null };
+let apiCache = {};
+
+/* ========================================================================
+   WORDPRESS API LAYER
+   ======================================================================== */
+function wpUrl(endpoint){ return WP_CONFIG.url.replace(/\/$/,'') + '/wp-json/wp/v2/' + endpoint; }
+
+async function wpFetch(endpoint, params={}){
+    if(!WP_CONFIG.url) return null;
+    const key = endpoint + JSON.stringify(params);
+    if(apiCache[key] && (Date.now()-apiCache[key].t < WP_CONFIG.cacheMs)) return apiCache[key].d;
+    try {
+        showWPStatus('Menghubungi WordPress...','load');
+        const qs = new URLSearchParams({_embed:true,per_page:WP_CONFIG.perPage,...params}).toString();
+        const r = await fetch(wpUrl(endpoint+'?'+qs), {next:{revalidate:300}});
+        if(!r.ok) throw new Error('HTTP '+r.status);
+        const total = parseInt(r.headers.get('X-WP-Total')||'0');
+        const data = await r.json();
+        apiCache[key] = {d:{data,total},t:Date.now()};
+        showWPStatus('WordPress terhubung','ok');
+        setTimeout(()=>hideWPStatus(),2500);
+        S.wpOk = true;
+        return {data,total};
+    } catch(e){
+        showWPStatus('Gagal terhubung ke WordPress — menggunakan data lokal','err');
+        setTimeout(()=>hideWPStatus(),4000);
+        S.wpOk = false;
+        return null;
+    }
+}
+
+// Normalisasi data WP ke format internal
+function normalizeWP(post){
+    const embedded = post._embedded||{};
+    const media = (embedded['wp:featuredmedia']||[])[0];
+    const author = (embedded['author']||[])[0];
+    const cats = embedded['wp:term']?.filter(t=>t.taxonomy==='category')||post.categories||[];
+    const tags = embedded['wp:term']?.filter(t=>t.taxonomy==='post_tag')||post.tags||[];
+    return {
+        id:post.id,
+        title:post.title.rendered.replace(/<[^>]*>/g,''),
+        summary:post.excerpt.rendered.replace(/<[^>]*>/g,'').substring(0,180),
+        content:post.content.rendered,
+        slug:post.slug,
+        category:cats[0]?.id||0,
+        categories:cats.map(c=>({id:c.id,name:c.name,slug:c.slug})),
+        tags:tags.map(t=>({id:t.id,name:t.name,slug:t.slug})),
+        author:{name:author?.name||'Redaksi',slug:author?.slug||''},
+        date:post.date,
+        featured_media:media?.source_url||'https://picsum.photos/seed/wpfb'+post.id+'/800/500',
+        views:0,
+        headline:false,
+        breaking:false,
+        ext_link:''
+    };
+}
+
+// Fetch semua artikel (WP atau dummy)
+async function fetchPosts(params={}){
+    const wp = await wpFetch('posts',params);
+    if(wp) return wp.data.map(normalizeWP);
+    return [...DUMMY];
+}
+
+async function fetchPostBySlug(slug){
+    const wp = await wpFetch('posts',{slug});
+    if(wp && wp.data.length) return normalizeWP(wp.data[0]);
+    return DUMMY.find(a=>a.slug===slug)||null;
+}
+
+async function fetchPostsByCategory(catId){
+    const wp = await wpFetch('posts',{categories:catId});
+    if(wp) return wp.data.map(normalizeWP);
+    return DUMMY.filter(a=>a.categories?.includes(catId)||a.category===catId);
+}
+
+async function fetchCategories(){
+    if(WP_CONFIG.url){
+        const wp = await wpFetch('categories',{per_page:50});
+        if(wp) return wp.data.map(c=>({id:c.id,name:c.name,slug:c.slug,icon:'fa-folder'}));
+    }
+    return CATS;
+}
+
+/* ========================================================================
+   UTILITY
+   ======================================================================== */
+function fmtDate(d){ return new Date(d).toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'}); }
+function fmtAgo(d){ const s=Math.floor((Date.now()-new Date(d))/1000); if(s<60)return'Baru saja';if(s<3600)return Math.floor(s/60)+' mnt lalu';if(s<86400)return Math.floor(s/3600)+' jam lalu';if(s<604800)return Math.floor(s/86400)+' hari lalu';return fmtDate(d); }
+function fmtViews(n){ return n>=1000?(n/1000).toFixed(1).replace('.0','')+'K':String(n); }
+function readTime(c){ return Math.max(2,Math.ceil(c.replace(/<[^>]*>/g,'').split(/\s+/).length/200)); }
+function catCls(id){ const c=CATS.find(x=>x.id===id); return c?'cat-'+c.slug:'cat-uncategorized'; }
+function catName(id){ const c=CATS.find(x=>x.id===id); return c?c.name:'Lainnya'; }
+function catNameByObj(cats){ return cats&&cats.length?cats[0].name:'Lainnya'; }
+function catClsByObj(cats){ return cats&&cats.length?'cat-'+(cats[0].slug||'uncategorized'):'cat-uncategorized'; }
+function toast(m,t='success'){ const c=document.getElementById('tc'); const cl={success:'bg-green-600',error:'bg-red-600',info:'bg-blue-600'}; const ic={success:'fa-check-circle',error:'fa-exclamation-circle',info:'fa-info-circle'}; const e=document.createElement('div'); e.className=`${cl[t]} text-white px-5 py-3 rounded-lg shadow-lg flex items-center gap-3 text-sm font-medium animate-fadeUp max-w-xs`; e.innerHTML=`<i class="fas ${ic[t]}"></i><span>${m}</span>`; c.appendChild(e); setTimeout(()=>{e.style.opacity='0';e.style.transform='translateY(10px)';e.style.transition='all .3s';setTimeout(()=>e.remove(),300)},3000); }
+function showWPStatus(m,t){ const e=document.getElementById('wp-status'); e.textContent=m; e.className='wp-status '+t+' show'; }
+function hideWPStatus(){ document.getElementById('wp-status').classList.remove('show'); }
+
+/* ========================================================================
+   SEO DYNAMIC
+   ======================================================================== */
+function setSEO({title,desc,img,url,type='website',schema}){
+    document.title = title;
+    document.getElementById('meta-desc').setAttribute('content',desc);
+    document.getElementById('og-title').setAttribute('content',title);
+    document.getElementById('og-desc').setAttribute('content',desc);
+    document.getElementById('og-img').setAttribute('content',img);
+    document.getElementById('og-type').setAttribute('content',type);
+    document.getElementById('tc-title').setAttribute('content',title);
+    document.getElementById('tc-desc').setAttribute('content',desc);
+    document.getElementById('tc-img').setAttribute('content',img);
+    document.getElementById('canonical').setAttribute('href',url||window.location.href);
+    if(schema) document.getElementById('schema-org').textContent = JSON.stringify(schema);
+    else document.getElementById('schema-org').textContent = '';
+}
+
+function articleSchema(a, url){
+    return {"@context":"https://schema.org","@type":"NewsArticle","headline":a.title,"image":a.featured_media,"datePublished":a.date,"dateModified":a.date,"author":{"@type":"Person","name":a.author.name},"publisher":{"@type":"Organization","name":WP_CONFIG.siteName,"logo":{"@type":"ImageObject","url":"https://picsum.photos/seed/bklogo/200/60.jpg"}},"mainEntityOfPage":{"@type":"WebPage","@id":url},"description":a.summary};
+}
+
+/* ========================================================================
+   IKLAN
+   ======================================================================== */
+function adBanner(key, cls=''){
+    const ad = ADS[key];
+    if(!ad||!ad.on) return '';
+    return `<a href="${ad.link}" target="_blank" rel="noopener noreferrer sponsored" class="ad-wrap block rounded-xl overflow-hidden ${cls}" style="background:${ad.bg}"><span class="ad-label">Sponsored</span><img src="${ad.img}" alt="${ad.alt}" loading="lazy" class="w-full h-full object-cover"></a>`;
+}
+
+function adSense(key, cls=''){
+    if(!ADSENSE.enabled) return '';
+    const slot = ADSENSE.slots[key];
+    if(!slot) return '';
+    const isV = slot.format==='vertical';
+    return `<div class="${cls}"><ins class="adsbygoogle" style="display:block${isV?'':';text-align:center'}" data-ad-client="${ADSENSE.client}" data-ad-slot="${slot.id}" data-ad-format="${slot.format}" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>`;
+}
+
+function adSlot(key, cls=''){
+    return adBanner(key, cls) || adSense(key, cls) || '';
+}
+
+/* ========================================================================
+   DARK MODE
+   ======================================================================== */
+function applyDark(){ document.documentElement.classList.toggle('dark',S.dark); const i=document.getElementById('dm-icon'); if(i)i.className=S.dark?'fas fa-sun text-yellow-400':'fas fa-moon text-gray-600 dark:text-ink-mutedDark'; }
+function toggleDark(){ S.dark=!S.dark; localStorage.setItem('bk-d',S.dark); applyDark(); }
+
+/* ========================================================================
+   ROUTER
+   ======================================================================== */
+function navigate(p){ window.location.hash=p; }
+function parseRoute(){
+    const h=window.location.hash.slice(1)||'/'; const p=h.split('/').filter(Boolean);
+    if(!p.length||p[0]==='') return {page:'home'};
+    if(p[0]==='kategori'&&p[1]) return {page:'category',cat:p[1]};
+    if(p[0]==='artikel'&&p[1]) return {page:'article',slug:p[1]};
+    if(p[0]==='admin') return {page:'admin'};
+    if(p[0]==='cari') return {page:'search',q:p.slice(1).join('/')};
+    return {page:'home'};
+}
+async function handleRoute(){
+    const r=parseRoute(); S.page=r.page; S.cat=r.cat||null; S.slug=r.slug||null; S.q=r.q?decodeURIComponent(r.q):''; S.count=12;
+    renderNav(); renderFooter();
+    switch(S.page){
+        case 'home': await renderHome(); break;
+        case 'category': await renderCat(); break;
+        case 'article': await renderArt(); break;
+        case 'search': renderSearch(); break;
+        case 'admin': renderAdmin(); break;
+        default: await renderHome();
+    }
+    window.scrollTo({top:0,behavior:'instant'});
+}
+
+/* ========================================================================
+   RENDER: NAV
+   ======================================================================== */
+async function renderNav(){
+    const cats = await fetchCategories();
+    const dn=document.getElementById('d-nav');
+    const mn=document.getElementById('m-nav');
+    const catLinks = cats.map(c=>{
+        const a=S.page==='category'&&S.cat===c.slug;
+        return`<a href="#/kategori/${c.slug}" class="nav-link ${a?'text-brand dark:text-brand-light font-bold active':'text-gray-700 dark:text-ink-mutedDark hover:text-brand dark:hover:text-brand-light'} px-3 py-1 text-sm font-medium whitespace-nowrap transition-colors">${c.name}</a>`;
+    }).join('');
+    dn.innerHTML=`<a href="#/" class="nav-link ${S.page==='home'?'text-brand dark:text-brand-light font-bold active':'text-gray-700 dark:text-ink-mutedDark hover:text-brand dark:hover:text-brand-light'} px-3 py-1 text-sm font-medium whitespace-nowrap transition-colors">Home</a>`+catLinks;
+    const mLinks = cats.map(c=>{
+        const a=S.page==='category'&&S.cat===c.slug;
+        return`<a href="#/kategori/${c.slug}" onclick="toggleMobile()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition ${a?'bg-brand-bg dark:bg-brand/10 text-brand dark:text-brand-light':'hover:bg-gray-50 dark:hover:bg-surface-card'}"><i class="fas ${c.icon||'fa-folder'} w-5 text-center opacity-60"></i>${c.name}</a>`;
+    }).join('');
+    mn.innerHTML=`<a href="#/" onclick="toggleMobile()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold ${S.page==='home'?'bg-brand-bg dark:bg-brand/10 text-brand dark:text-brand-light':'hover:bg-gray-50 dark:hover:bg-surface-card'}"><i class="fas fa-home w-5 text-center opacity-60"></i>Home</a><div class="h-px bg-gray-200 dark:bg-surface-border my-2"></div>${mLinks}<div class="h-px bg-gray-200 dark:bg-surface-border my-2"></div><a href="#/admin" onclick="toggleMobile()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium hover:bg-gray-50 dark:hover:bg-surface-card"><i class="fas fa-user-shield w-5 text-center opacity-60"></i>Admin Panel</a>`;
+}
+
+function renderTicker(){ const t=document.getElementById('ticker-track'); const i=BREAKING.map(n=>`<span class="text-xs sm:text-sm"><i class="fas fa-circle text-[5px] mr-2 opacity-60"></i>${n}</span>`).join(''); t.innerHTML=i+i; }
+
+function renderFooter(){
+    document.getElementById('ft').innerHTML=`
+    ${adSlot('foot','max-w-7xl mx-auto')}
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex items-center gap-2 mb-4"><div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center"><span class="text-white font-extrabold text-sm font-headline">B</span></div><span class="text-xl font-extrabold text-white font-headline">BeritaKini</span></div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Portal berita terkini, terpercaya, dan terlengkap dari Indonesia dan Dunia.</p>
+                <div class="flex gap-3"><a href="#" class="w-9 h-9 bg-gray-800 hover:bg-brand rounded-full flex items-center justify-center transition" aria-label="Facebook"><i class="fab fa-facebook-f text-sm"></i></a><a href="#" class="w-9 h-9 bg-gray-800 hover:bg-brand rounded-full flex items-center justify-center transition" aria-label="Twitter"><i class="fab fa-x-twitter text-sm"></i></a><a href="#" class="w-9 h-9 bg-gray-800 hover:bg-brand rounded-full flex items-center justify-center transition" aria-label="Instagram"><i class="fab fa-instagram text-sm"></i></a><a href="#" class="w-9 h-9 bg-gray-800 hover:bg-brand rounded-full flex items-center justify-center transition" aria-label="YouTube"><i class="fab fa-youtube text-sm"></i></a></div>
+            </div>
+            <div><h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Kategori</h4><ul class="space-y-2.5" id="ft-cats"></ul></div>
+            <div><h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Perusahaan</h4><ul class="space-y-2.5"><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Tentang Kami</a></li><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Redaksi</a></li><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Karir</a></li><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Hubungi Kami</a></li></ul></div>
+            <div><h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Legal</h4><ul class="space-y-2.5"><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Kebijakan Privasi</a></li><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Syarat & Ketentuan</a></li><li><a href="#" class="text-gray-400 hover:text-white text-sm transition">Disclaimer</a></li><li><a href="/robots.txt" class="text-gray-400 hover:text-white text-sm transition">Robots.txt</a></li><li><a href="/sitemap.xml" class="text-gray-400 hover:text-white text-sm transition">Sitemap.xml</a></li></ul></div>
+        </div>
+        <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4"><p class="text-gray-500 text-xs">&copy; 2025 BeritaKini. Seluruh hak cipta dilindungi.</p><p class="text-gray-500 text-xs">Dibuat dengan <i class="fas fa-heart text-brand text-[10px]"></i> di Indonesia</p></div>
+    </div>`;
+    fetchCategories().then(cats=>{document.getElementById('ft-cats').innerHTML=cats.map(c=>`<li><a href="#/kategori/${c.slug}" class="text-gray-400 hover:text-white text-sm transition">${c.name}</a></li>`).join('');});
+}
+
+/* ========================================================================
+   RENDER: CARD ARTIKEL
+   ======================================================================== */
+function card(a, sz='md'){
+    const el = !!a.ext_link;
+    const click = el?`window.open('${a.ext_link}','_blank')`:`navigate('/artikel/${a.slug}')`;
+    const cc = a.categories?.length?catClsByObj(a.categories):catCls(a.category);
+    const cn = a.categories?.length?catNameByObj(a.categories):catName(a.category);
+    const ei = el?'<i class="fas fa-external-link-alt text-[9px] ml-1 opacity-50"></i>':'';
+    if(sz==='sm') return `<article class="ac group flex gap-3 cursor-pointer" onclick="${click}"><div class="w-24 h-20 sm:w-28 sm:h-20 rounded-lg overflow-hidden shrink-0 bg-gray-200 dark:bg-surface-card"><img src="${a.featured_media}" alt="${a.title}" loading="lazy" class="w-full h-full object-cover"></div><div class="flex-1 min-w-0"><span class="cb ${cc} inline-block mb-1">${cn}</span><h3 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors">${a.title}${ei}</h3></div></article>`;
+    return `<article class="ac group cursor-pointer bg-white dark:bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-surface-border" onclick="${click}"><div class="aspect-video overflow-hidden bg-gray-200 dark:bg-surface-border relative"><img src="${a.featured_media}" alt="${a.title}" loading="lazy" class="w-full h-full object-cover">${el?'<span class="ext-badge"><i class="fas fa-external-link-alt text-[8px]"></i>Eksternal</span>':''}</div><div class="p-4"><div class="flex items-center gap-2 mb-2"><span class="cb ${cc}">${cn}</span><span class="text-xs text-gray-400 dark:text-ink-mutedDark"><i class="far fa-clock mr-1"></i>${readTime(a.content)} mnt</span></div><h3 class="font-bold text-base leading-snug mb-2 line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors font-headline">${a.title}${ei}</h3><p class="text-sm text-gray-500 dark:text-ink-mutedDark line-clamp-2 leading-relaxed">${a.summary}</p><div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100 dark:border-surface-border"><span class="text-xs text-gray-400 dark:text-ink-mutedDark"><i class="far fa-user mr-1"></i>${a.author.name}</span><span class="text-xs text-gray-400 dark:text-ink-mutedDark">${fmtAgo(a.date)}</span></div></div></article>`;
+}
+
+/* ========================================================================
+   RENDER: HOME
+   ======================================================================== */
+async function renderHome(){
+    const posts = await fetchPosts({page:1,per_page:S.count});
+    const headlines = posts.filter(a=>a.headline);
+    const hero = headlines[0]||posts[0];
+    const heroS = headlines.slice(1,3);
+    const rest = posts.filter(a=>a.id!==hero?.id);
+    const disp = rest.slice(0,S.count-1);
+    const popular = [...posts].sort((a,b)=>(b.views||0)-(a.views||0)).slice(0,5);
+    const hl = !!hero?.ext_link; const hClick = hl?`window.open('${hero.ext_link}','_blank')`:`navigate('/artikel/${hero.slug}')`;
+
+    setSEO({title:`${WP_CONFIG.siteName} - Portal Berita Terkini Indonesia`,desc:'Berita terbaru, terpercaya dari Indonesia dan Dunia. Nasional, Internasional, Ekonomi, Teknologi, Olahraga, Hiburan, Lifestyle.',img:'https://picsum.photos/seed/bk-og/1200/630.jpg',url:window.location.origin+'/',schema:{"@context":"https://schema.org","@type":"WebSite","name":WP_CONFIG.siteName,"url":window.location.origin,"potentialAction":{"@type":"SearchAction","target":window.location.origin+"/#/cari/{search_term_string}","query-input":"required name=search_term_string"}}});
+
+    document.getElementById('mc').innerHTML=`
+    <div class="max-w-7xl mx-auto px-4 pt-4">${adSlot('top','h-16 sm:h-20')}</div>
+    <section class="max-w-7xl mx-auto px-4 pt-4 pb-4 animate-fadeUp">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+            <div class="lg:col-span-3 relative rounded-2xl overflow-hidden cursor-pointer group" style="min-height:320px" onclick="${hClick}">
+                <img src="${hero.featured_media}" alt="${hero.title}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="eager">
+                <div class="hero-ov absolute inset-0"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
+                    <span class="cb ${hero.categories?.length?catClsByObj(hero.categories):catCls(hero.category)} inline-block mb-3">${hero.categories?.length?catNameByObj(hero.categories):catName(hero.category)}</span>
+                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight mb-3 font-headline">${hero.title}${hl?' <i class="fas fa-external-link-alt text-sm opacity-70"></i>':''}</h1>
+                    <p class="text-gray-300 text-sm line-clamp-2 mb-3 max-w-xl">${hero.summary}</p>
+                    <div class="flex items-center gap-4 text-gray-400 text-xs"><span><i class="far fa-user mr-1"></i>${hero.author.name}</span><span><i class="far fa-clock mr-1"></i>${fmtAgo(hero.date)}</span></div>
+                </div>
+                ${hero.breaking?'<div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded animate-pulse2 flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-white rounded-full"></span>BREAKING</div>':''}
+            </div>
+            <div class="lg:col-span-2 flex flex-col gap-4">${heroS.map(a=>{const el=!!a.ext_link;const hc=el?`window.open('${a.ext_link}','_blank')`:`navigate('/artikel/${a.slug}')`;return`<div class="relative rounded-xl overflow-hidden cursor-pointer group flex-1" style="min-height:155px" onclick="${hc}"><img src="${a.featured_media}" alt="${a.title}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"><div class="hero-ov absolute inset-0"></div><div class="absolute bottom-0 left-0 right-0 p-4"><span class="cb ${a.categories?.length?catClsByObj(a.categories):catCls(a.category)} inline-block mb-2 text-[10px]">${a.categories?.length?catNameByObj(a.categories):catName(a.category)}</span><h2 class="text-sm sm:text-base font-bold text-white leading-snug font-headline">${a.title}${el?' <i class="fas fa-external-link-alt text-[10px] opacity-70"></i>':''}</h2></div></div>`;}).join('')}${heroS.length<2?'<div class="flex-1 rounded-xl bg-gray-100 dark:bg-surface-card border border-dashed border-gray-300 dark:border-surface-border flex items-center justify-center text-gray-400 text-sm"><i class="fas fa-newspaper mr-2"></i>Headline lainnya</div>':''}</div>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-4 pb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="flex items-center justify-between mb-5"><h2 class="text-lg sm:text-xl font-bold flex items-center gap-2"><span class="w-1 h-6 bg-brand rounded-full"></span>Berita Terbaru</h2><span class="text-xs text-gray-400">${disp.length} artikel</span></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="a-grid">${disp.map(a=>card(a)).join('')}</div>
+                <div class="mt-8 text-center"><div id="scroll-sentinel" class="h-1"></div><button onclick="S.count+=6;handleRoute()" class="inline-flex items-center gap-2 px-8 py-3 bg-white dark:bg-surface-card border-2 border-brand text-brand dark:text-brand-light rounded-full font-semibold text-sm hover:bg-brand hover:text-white transition-all duration-300"><i class="fas fa-arrow-down text-xs"></i>Muat Lebih Banyak</button></div>
+            </div>
+            <aside class="space-y-6">
+                ${adSlot('side','h-60 sm:h-64')}
+                <div class="bg-white dark:bg-surface-card rounded-xl p-5 border border-gray-100 dark:border-surface-border shadow-sm"><h3 class="font-bold text-base mb-4 flex items-center gap-2"><span class="w-1 h-5 bg-brand rounded-full"></span>Berita Populer</h3><div class="space-y-4">${popular.map((a,i)=>{const el=!!a.ext_link;const ck=el?`window.open('${a.ext_link}','_blank')`:`navigate('/artikel/${a.slug}')`;return`<div class="flex gap-3 group cursor-pointer" onclick="${ck}"><span class="text-2xl font-extrabold text-gray-200 dark:text-surface-border leading-none mt-0.5">${String(i+1).padStart(2,'0')}</span><div class="flex-1 min-w-0"><span class="text-[10px] font-bold uppercase ${a.categories?.length?catClsByObj(a.categories):catCls(a.category)}" style="color:var(--cat)">${a.categories?.length?catNameByObj(a.categories):catName(a.category)}</span><h4 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors mt-0.5">${a.title}${el?' <i class="fas fa-external-link-alt text-[9px] opacity-50"></i>':''}</h4></div></div>`;}).join('')}</div></div>
+                <div class="bg-white dark:bg-surface-card rounded-xl p-5 border border-gray-100 dark:border-surface-border shadow-sm"><h3 class="font-bold text-base mb-4 flex items-center gap-2"><span class="w-1 h-5 bg-brand rounded-full"></span>Trending</h3><div class="flex flex-wrap gap-2">${TRENDING.map(t=>`<a href="#/cari/${encodeURIComponent(t.tag)}" class="px-3 py-1.5 bg-surface-alt dark:bg-surface-border rounded-full text-xs font-medium text-gray-600 dark:text-ink-mutedDark hover:bg-brand hover:text-white transition">#${t.tag} <span class="opacity-50 ml-1">${t.n}</span></a>`).join('')}</div></div>
+            </aside>
+        </div>
+    </section>`;
+    const sent=document.getElementById('scroll-sentinel');if(sent)new IntersectionObserver(e=>{if(e[0].isIntersecting){S.count+=6;handleRoute();}},{rootMargin:'200px'}).observe(sent);
+}
+
+/* ========================================================================
+   RENDER: KATEGORI
+   ======================================================================== */
+async function renderCat(){
+    const cats = await fetchCategories();
+    const catObj = cats.find(c=>c.slug===S.cat);
+    let posts;
+    if(WP_CONFIG.url && catObj) posts = await fetchPostsByCategory(catObj.id);
+    else posts = DUMMY.filter(a=>a.categories?.some(c=>c.slug===S.cat)||a.category===(catObj?.id||0));
+    const disp = posts.slice(0,S.count);
+    const popular = [...posts].sort((a,b)=>(b.views||0)-(a.views||0)).slice(0,5);
+    const name = catObj?.name||S.cat;
+
+    setSEO({title:`${name} - ${WP_CONFIG.siteName}`,desc:`Berita ${name} terbaru dan terlengkap di ${WP_CONFIG.siteName}`,img:'https://picsum.photos/seed/bk-og/1200/630.jpg'});
+
+    document.getElementById('mc').innerHTML=`
+    <section class="max-w-7xl mx-auto px-4 pt-6 pb-8 animate-fadeUp">
+        <div class="mb-6"><nav class="text-xs text-gray-400 dark:text-ink-mutedDark mb-3 flex items-center gap-1"><a href="#/" class="hover:text-brand transition">Home</a><i class="fas fa-chevron-right text-[8px] mx-1"></i><span class="text-brand dark:text-brand-light font-medium">${name}</span></nav><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-brand/10 dark:bg-brand/20 flex items-center justify-center"><i class="fas ${catObj?.icon||'fa-folder'} text-brand dark:text-brand-light"></i></div><div><h1 class="text-xl sm:text-2xl font-bold font-headline">${name}</h1><p class="text-sm text-gray-400 dark:text-ink-mutedDark">${posts.length} artikel</p></div></div></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">${posts.length===0?'<div class="text-center py-16 text-gray-400"><i class="fas fa-newspaper text-4xl mb-3 block opacity-30"></i><p>Belum ada berita</p></div>':`<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">${disp.map(a=>card(a)).join('')}</div><div class="mt-8 text-center"><div id="scroll-sentinel" class="h-1"></div><button onclick="S.count+=6;handleRoute()" class="inline-flex items-center gap-2 px-8 py-3 bg-white dark:bg-surface-card border-2 border-brand text-brand dark:text-brand-light rounded-full font-semibold text-sm hover:bg-brand hover:text-white transition-all duration-300"><i class="fas fa-arrow-down text-xs"></i>Muat Lebih Banyak</button></div>`}</div>
+            <aside class="space-y-6"><div class="bg-white dark:bg-surface-card rounded-xl p-5 border border-gray-100 dark:border-surface-border shadow-sm"><h3 class="font-bold text-base mb-4 flex items-center gap-2"><span class="w-1 h-5 bg-brand rounded-full"></span>Terpopuler</h3><div class="space-y-4">${popular.map((a,i)=>`<div class="flex gap-3 group cursor-pointer" onclick="navigate('/artikel/${a.slug}')"><span class="text-2xl font-extrabold text-gray-200 dark:text-surface-border leading-none mt-0.5">${String(i+1).padStart(2,'0')}</span><div class="flex-1 min-w-0"><h4 class="text-sm font-semibold leading-snug line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors">${a.title}</h4></div></div>`).join('')}</div></div>${adSlot('side','h-56')}</aside>
+        </div>
+    </section>`;
+    const sent=document.getElementById('scroll-sentinel');if(sent)new IntersectionObserver(e=>{if(e[0].isIntersecting){S.count+=6;handleRoute();}},{rootMargin:'200px'}).observe(sent);
+}
+
+/* ========================================================================
+   RENDER: ARTIKEL DETAIL
+   ======================================================================== */
+async function renderArt(){
+    const a = await fetchPostBySlug(S.slug);
+    if(!a){document.getElementById('mc').innerHTML=`<div class="max-w-2xl mx-auto px-4 py-20 text-center animate-fadeUp"><i class="fas fa-exclamation-triangle text-5xl text-gray-300 dark:text-surface-border mb-4"></i><h2 class="text-xl font-bold mb-2">Artikel Tidak Ditemukan</h2><a href="#/" class="inline-flex items-center gap-2 px-6 py-3 bg-brand text-white rounded-full text-sm font-semibold hover:bg-brand-dark transition mt-4"><i class="fas fa-arrow-left text-xs"></i>Kembali</a></div>`;return;}
+    if(a.ext_link){window.open(a.ext_link,'_blank');navigate('/');return;}
+    const cn = a.categories?.length?catNameByObj(a.categories):catName(a.category);
+    const cc = a.categories?.length?catClsByObj(a.categories):catCls(a.category);
+    const tags = a.tags||[];
+    const url = window.location.origin+'/#/artikel/'+a.slug;
+    const su=encodeURIComponent(url); const st=encodeURIComponent(a.title);
+
+    // SEO dinamis
+    setSEO({title:a.title+' - '+WP_CONFIG.siteName, desc:a.summary, img:a.featured_media, url:url, type:'article', schema:articleSchema(a,url)});
+
+    // Cari artikel terkait
+    const allPosts = await fetchPosts({per_page:20});
+    const related = allPosts.filter(r=>r.id!==a.id&&(r.categories?.some(c=>a.categories?.some(ac=>ac.id===c.id))||r.category===a.category)).slice(0,3);
+
+    document.getElementById('mc').innerHTML=`
+    <article class="max-w-3xl mx-auto px-4 pt-6 pb-8 animate-fadeUp">
+        <nav class="text-xs text-gray-400 dark:text-ink-mutedDark mb-5 flex items-center gap-1 flex-wrap" itemscope itemtype="https://schema.org/BreadcrumbList"><a href="#/" class="hover:text-brand transition" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Home</span></a><i class="fas fa-chevron-right text-[8px] mx-1"></i><a href="#/kategori/${a.categories?.[0]?.slug||''}" class="hover:text-brand transition"><span itemprop="name">${cn}</span></a><i class="fas fa-chevron-right text-[8px] mx-1"></i><span class="text-gray-600 dark:text-ink-mutedDark line-clamp-1 max-w-[200px]">${a.title}</span></nav>
+        <div class="flex flex-wrap items-center gap-3 mb-4"><span class="cb ${cc}">${cn}</span>${a.breaking?'<span class="bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1"><span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse2"></span>BREAKING</span>':''}<span class="text-xs text-gray-400 dark:text-ink-mutedDark"><i class="far fa-clock mr-1"></i>${readTime(a.content)} menit baca</span></div>
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-5 font-headline" itemprop="headline">${a.title}</h1>
+        <div class="flex flex-wrap items-center gap-4 pb-5 mb-6 border-b border-gray-200 dark:border-surface-border" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center"><i class="fas fa-user text-brand dark:text-brand-light text-sm"></i></div><div><p class="text-sm font-semibold" itemprop="name">${a.author.name}</p><p class="text-xs text-gray-400 dark:text-ink-mutedDark"><time datetime="${a.date}" itemprop="datePublished">${fmtDate(a.date)}</time></p></div></div></div>
+        <figure class="mb-6 rounded-2xl overflow-hidden" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img src="${a.featured_media}" alt="${a.title}" class="w-full aspect-video object-cover" loading="eager" itemprop="url"></figure>
+        <div class="mb-6">${adSlot('mid','h-16 sm:h-20')}</div>
+        <div class="text-gray-800 dark:text-gray-200 leading-relaxed space-y-4 text-base sm:text-[17px] article-content" itemprop="articleBody">${a.content}</div>
+        ${tags.length?`<div class="flex flex-wrap items-center gap-2 mt-8 pt-6 border-t border-gray-200 dark:border-surface-border"><i class="fas fa-tags text-gray-400 text-xs"></i>${tags.map(t=>`<a href="#/cari/${encodeURIComponent(t.name)}" class="px-3 py-1 bg-surface-alt dark:bg-surface-border rounded-full text-xs font-medium text-gray-600 dark:text-ink-mutedDark hover:bg-brand hover:text-white transition">#${t.name}</a>`).join('')}</div>`:''}
+        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-surface-border"><p class="text-sm font-semibold mb-3">Bagikan:</p><div class="flex gap-2"><a href="https://www.facebook.com/sharer/sharer.php?u=${su}" target="_blank" rel="noopener" class="sb bg-blue-600 text-white"><i class="fab fa-facebook-f text-sm"></i></a><a href="https://twitter.com/intent/tweet?url=${su}&text=${st}" target="_blank" rel="noopener" class="sb bg-black dark:bg-white text-white dark:text-black"><i class="fab fa-x-twitter text-sm"></i></a><a href="https://wa.me/?text=${st}%20${su}" target="_blank" rel="noopener" class="sb bg-green-500 text-white"><i class="fab fa-whatsapp text-sm"></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=${su}&title=${st}" target="_blank" rel="noopener" class="sb bg-blue-700 text-white"><i class="fab fa-linkedin-in text-sm"></i></a><button onclick="navigator.clipboard.writeText(location.href).then(()=>toast('Link disalin!'))" class="sb bg-gray-200 dark:bg-surface-border text-gray-700 dark:text-ink-mutedDark"><i class="fas fa-link text-sm"></i></button></div></div>
+        <div class="mt-8">${adSlot('bot','h-16 sm:h-20')}</div>
+    </article>
+    ${related.length?`<section class="max-w-3xl mx-auto px-4 pb-12"><h3 class="font-bold text-lg mb-5 flex items-center gap-2"><span class="w-1 h-5 bg-brand rounded-full"></span>Berita Terkait</h3><div class="grid grid-cols-1 sm:grid-cols-3 gap-5">${related.map(r=>`<article class="ac group cursor-pointer" onclick="navigate('/artikel/${r.slug}')"><div class="aspect-video rounded-xl overflow-hidden mb-3 bg-gray-200 dark:bg-surface-card"><img src="${r.featured_media}" alt="${r.title}" loading="lazy" class="w-full h-full object-cover"></div><span class="cb ${r.categories?.length?catClsByObj(r.categories):catCls(r.category)} text-[10px]">${r.categories?.length?catNameByObj(r.categories):catName(r.category)}</span><h4 class="text-sm font-semibold leading-snug mt-1.5 line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors font-headline">${r.title}</h4><span class="text-xs text-gray-400 mt-1.5 block">${fmtAgo(r.date)}</span></article>`).join('')}</div></section>`:''}`;
+}
+
+/* ========================================================================
+   RENDER: SEARCH
+   ======================================================================== */
+function renderSearch(){
+    const q=S.q.toLowerCase();
+    const results=DUMMY.filter(a=>a.title.toLowerCase().includes(q)||a.summary.toLowerCase().includes(q)||a.tags?.some(t=>t.name.toLowerCase().includes(q)));
+    setSEO({title:`Pencarian "${S.q}" - ${WP_CONFIG.siteName}`,desc:`Hasil pencarian untuk "${S.q}" di ${WP_CONFIG.siteName}`});
+    document.getElementById('mc').innerHTML=`<section class="max-w-3xl mx-auto px-4 pt-6 pb-12 animate-fadeUp"><nav class="text-xs text-gray-400 dark:text-ink-mutedDark mb-4 flex items-center gap-1"><a href="#/" class="hover:text-brand transition">Home</a><i class="fas fa-chevron-right text-[8px] mx-1"></i><span>Pencarian</span></nav><h1 class="text-xl font-bold mb-1 font-headline">Hasil: <span class="text-brand dark:text-brand-light">"${S.q}"</span></h1><p class="text-sm text-gray-400 mb-6">${results.length} artikel ditemukan</p>${results.length===0?'<div class="text-center py-16"><i class="fas fa-search text-5xl text-gray-300 dark:text-surface-border mb-4"></i><p class="text-gray-500">Tidak ditemukan.</p></div>':`<div class="space-y-4">${results.map(a=>`<article class="ac group flex gap-4 p-4 bg-white dark:bg-surface-card rounded-xl border border-gray-100 dark:border-surface-border hover:shadow-md transition-shadow cursor-pointer" onclick="${a.ext_link?`window.open('${a.ext_link}','_blank')`:`navigate('/artikel/${a.slug})`}"><div class="w-32 h-24 sm:w-40 sm:h-28 rounded-lg overflow-hidden shrink-0 bg-gray-200 dark:bg-surface-border"><img src="${a.featured_media}" alt="" loading="lazy" class="w-full h-full object-cover"></div><div class="flex-1 min-w-0"><span class="cb ${a.categories?.length?catClsByObj(a.categories):catCls(a.category)} text-[10px] mb-1 inline-block">${a.categories?.length?catNameByObj(a.categories):catName(a.category)}</span><h3 class="font-bold text-sm sm:text-base leading-snug line-clamp-2 group-hover:text-brand dark:group-hover:text-brand-light transition-colors font-headline">${a.title}</h3><p class="text-xs text-gray-500 line-clamp-2 mt-1 hidden sm:block">${a.summary}</p></div></article>`).join('')}</div>`}</section>`;
+}
+
+/* ========================================================================
+   RENDER: ADMIN
+   ======================================================================== */
+function renderAdmin(){
+    if(!S.admin){renderAdminLogin();return;}
+    const arts=localStorage.getItem('bk-local')?JSON.parse(localStorage.getItem('bk-local')):[];
+    const all=[...DUMMY,...arts];
+    document.getElementById('mc').innerHTML=`
+    <section class="max-w-5xl mx-auto px-4 pt-6 pb-12 animate-fadeUp">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div><h1 class="text-xl sm:text-2xl font-bold font-headline flex items-center gap-2"><i class="fas fa-user-shield text-brand"></i>Admin Panel</h1><p class="text-sm text-gray-400 mt-1">Kelola berita & iklan — Data Source: ${WP_CONFIG.url?'<span class="text-green-500">WordPress API</span>':'<span class="text-yellow-500">Data Lokal (Dummy)</span>'}</p></div>
+            <div class="flex gap-2"><button onclick="openForm()" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white rounded-lg text-sm font-semibold transition"><i class="fas fa-plus text-xs"></i>Tambah Berita (Link)</button><button onclick="S.admin=false;localStorage.removeItem('bk-a');toast('Keluar','info');navigate('/')" class="inline-flex items-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-surface-card hover:bg-gray-300 dark:hover:bg-surface-border rounded-lg text-sm font-medium transition"><i class="fas fa-sign-out-alt text-xs"></i>Keluar</button></div>
+        </div>
+        <div class="bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800/30 rounded-xl p-4 mb-6"><h3 class="font-semibold text-sm text-blue-800 dark:text-blue-300 mb-1"><i class="fas fa-plug mr-1"></i>Koneksi WordPress</h3><p class="text-xs text-blue-600 dark:text-blue-400">Status: <strong>${S.wpOk===null?'Belum dicek':S.wpOk?'<span class="text-green-600">Terhubung</span>':'<span class="text-red-500">Gagal — menggunakan data lokal</span>'}</strong>. Untuk menghubungkan, edit <code class="bg-blue-100 dark:bg-blue-900/30 px-1 rounded text-[11px]">WP_CONFIG.url</code> di script.</p></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6"><div class="bg-white dark:bg-surface-card rounded-xl p-4 border border-gray-100 dark:border-surface-border"><p class="text-xs text-gray-400 mb-1">Total Berita</p><p class="text-2xl font-bold">${all.length}</p></div><div class="bg-white dark:bg-surface-card rounded-xl p-4 border border-gray-100 dark:border-surface-border"><p class="text-xs text-gray-400 mb-1">Tipe Link</p><p class="text-2xl font-bold text-orange-500">${all.filter(a=>a.ext_link).length}</p></div><div class="bg-white dark:bg-surface-card rounded-xl p-4 border border-gray-100 dark:border-surface-border"><p class="text-xs text-gray-400 mb-1">Banner Aktif</p><p class="text-2xl font-bold text-brand">${Object.values(ADS).filter(a=>a.on).length}</p></div></div>
+        <div class="bg-white dark:bg-surface-card rounded-xl border border-gray-100 dark:border-surface-border overflow-hidden">
+            <div class="px-5 py-4 border-b border-gray-100 dark:border-surface-border flex items-center justify-between"><h2 class="font-bold text-sm">Artikel Lokal (Link)</h2><span class="text-xs text-gray-400">${arts.length} artikel</span></div>
+            ${arts.length===0?'<div class="p-8 text-center text-gray-400 text-sm"><i class="fas fa-link text-3xl mb-2 block opacity-30"></i>Belum ada artikel link. Klik "Tambah Berita (Link)" untuk mulai.</div>':`<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr class="bg-surface-alt dark:bg-surface-border/50 text-left"><th class="px-5 py-3 font-semibold text-xs text-gray-500 uppercase">Judul</th><th class="px-4 py-3 font-semibold text-xs text-gray-500 uppercase hidden sm:table-cell">Link</th><th class="px-4 py-3 font-semibold text-xs text-gray-500 uppercase text-right">Aksi</th></tr></thead><tbody>${arts.map(a=>`<tr class="border-t border-gray-50 dark:border-surface-border/50 hover:bg-surface-alt/50 transition"><td class="px-5 py-3"><div class="flex items-center gap-3"><img src="${a.featured_media}" alt="" class="w-12 h-9 rounded object-cover shrink-0 hidden sm:block" loading="lazy"><div class="min-w-0"><p class="font-medium line-clamp-1">${a.title}</p><span class="text-[10px] text-gray-400">${fmtDate(a.date)}</span></div></div></td><td class="px-4 py-3 hidden sm:table-cell"><a href="${a.ext_link}" target="_blank" class="text-xs text-blue-500 hover:underline line-clamp-1 block max-w-[200px]">${a.ext_link}</a></td><td class="px-4 py-3 text-right"><button onclick="delLocal(${a.id})" class="w-8 h-8 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 text-red-500 flex items-center justify-center transition inline-flex"><i class="fas fa-trash text-xs"></i></button></td></tr>`).join('')}</tbody></table></div>`}
+        </div>
+    </section>`;
+}
+
+function renderAdminLogin(){
+    document.getElementById('mc').innerHTML=`<section class="max-w-md mx-auto px-4 py-20 animate-fadeUp"><div class="bg-white dark:bg-surface-card rounded-2xl p-8 border border-gray-200 dark:border-surface-border shadow-lg text-center"><div class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mx-auto mb-5"><i class="fas fa-user-shield text-2xl text-brand"></i></div><h1 class="text-xl font-bold mb-1 font-headline">Admin Login</h1><p class="text-sm text-gray-400 mb-6">Masuk untuk mengelola berita</p><div class="space-y-4 text-left"><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Username</label><input type="text" id="au" value="admin" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition"></div><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Password</label><input type="password" id="ap" value="admin123" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition"></div><button onclick="const u=document.getElementById('au').value,p=document.getElementById('ap').value;if(u==='admin'&&p==='admin123'){S.admin=true;localStorage.setItem('bk-a','true');toast('Login berhasil!');render();}else toast('Salah','error')" class="w-full h-11 bg-brand hover:bg-brand-dark text-white rounded-xl font-semibold text-sm transition">Masuk</button></div><p class="text-xs text-gray-400 mt-5">Default: admin / admin123</p></div></section>`;
+}
+
+function openForm(){
+    const m=document.getElementById('am');m.classList.remove('hidden');
+    document.getElementById('am-c').innerHTML=`<div class="bg-white dark:bg-surface-card rounded-2xl shadow-2xl animate-fadeUp overflow-hidden max-w-2xl mx-auto"><div class="px-6 py-4 border-b border-gray-200 dark:border-surface-border flex items-center justify-between"><h3 class="font-bold text-lg">Tambah Berita (Link)</h3><button onclick="closeAM()" class="w-8 h-8 rounded-full hover:bg-gray-100 dark:hover:bg-surface-border flex items-center justify-center"><i class="fas fa-times text-gray-400"></i></button></div><div class="p-6 space-y-4"><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Judul Berita *</label><input type="text" id="f-title" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition" placeholder="Judul berita"></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Kategori</label><select id="f-cat" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition">${CATS.map(c=>`<option value="${c.id}">${c.name}</option>`).join('')}</select></div><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Penulis</label><input type="text" id="f-author" value="Redaksi BeritaKini" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition"></div></div><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Link Artikel Tujuan *</label><input type="url" id="f-link" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition" placeholder="https://situs-sumber.com/artikel"><p class="text-[11px] text-gray-400 mt-1"><i class="fas fa-info-circle mr-1"></i>Paste link sumber. Pengunjung dikirim ke link ini saat klik berita.</p></div><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">URL Gambar Thumbnail</label><input type="url" id="f-img" value="https://picsum.photos/seed/new-${Date.now()}/800/500" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition"></div><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Ringkasan *</label><textarea id="f-sum" rows="2" class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition resize-none" placeholder="Ringkasan singkat"></textarea></div><div><label class="text-xs font-semibold text-gray-500 uppercase mb-1.5 block">Tags (pisahkan koma)</label><input type="text" id="f-tags" class="w-full h-11 px-4 rounded-xl border border-gray-200 dark:border-surface-border bg-surface-alt dark:bg-surface-dark text-sm focus:outline-none focus:ring-2 focus:ring-brand/40 transition" placeholder="Contoh: Politik, Hukum"></div></div><div class="px-6 py-4 border-t border-gray-200 dark:border-surface-border flex gap-3"><button onclick="closeAM()" class="flex-1 h-11 rounded-xl border border-gray-200 dark:border-surface-border text-sm font-medium hover:bg-gray-50 dark:hover:bg-surface-border transition">Batal</button><button onclick="saveLocal()" class="flex-1 h-11 rounded-xl bg-brand hover:bg-brand-dark text-white text-sm font-semibold transition">Publikasikan</button></div></div>`;
+}
+
+function saveLocal(){
+    const title=document.getElementById('f-title').value.trim();
+    const link=document.getElementById('f-link').value.trim();
+    const sum=document.getElementById('f-sum').value.trim();
+    const img=document.getElementById('f-img').value.trim();
+    const cat=parseInt(document.getElementById('f-cat').value);
+    const author=document.getElementById('f-author').value.trim();
+    const tags=document.getElementById('f-tags').value.split(',').map(t=>({name:t.trim(),slug:t.trim().toLowerCase()})).filter(t=>t.name);
+    if(!title||!link||!sum){toast('Judul, link, ringkasan wajib diisi','error');return;}
+    const arts=localStorage.getItem('bk-local')?JSON.parse(localStorage.getItem('bk-local')):[];
+    const newId=arts.length>0?Math.max(...arts.map(a=>a.id))+1:DUMMY.length+1;
+    const slug='link-'+Date.now();
+    const catObj=CATS.find(c=>c.id===cat)||CATS[0];
+    arts.unshift({id:newId,title,summary:sum,content:'<p>'+sum+'</p>',slug,category:cat,categories:[{id:cat,name:catObj.name,slug:catObj.slug}],tags,author:{name:author||'Redaksi',slug:''},date:new Date().toISOString(),featured_media:img||'https://picsum.photos/seed/def/800/500',views:0,headline:false,breaking:false,ext_link:link});
+    localStorage.setItem('bk-local',JSON.stringify(arts));
+    closeAM();toast('Berita link berhasil dipublikasikan!');render();
+}
+
+function delLocal(id){
+    const arts=(localStorage.getItem('bk-local')?JSON.parse(localStorage.getItem('bk-local')):[]).filter(a=>a.id!==id);
+    localStorage.setItem('bk-local',JSON.stringify(arts));toast('Dihapus','info');render();
+}
+
+function closeAM(){document.getElementById('am').classList.add('hidden');}
+
+/* ========================================================================
+   SEARCH
+   ======================================================================== */
+function openSearch(){document.getElementById('s-ov').classList.remove('hidden');setTimeout(()=>document.getElementById('s-in').focus(),100);}
+function closeSearch(){document.getElementById('s-ov').classList.add('hidden');document.getElementById('s-in').value='';document.getElementById('s-res').innerHTML='';}
+function doSearch(q){
+    if(!q.trim()){document.getElementById('s-res').innerHTML='<div class="p-6 text-center text-sm text-gray-400">Ketik minimal 2 karakter</div>';return;}
+    const r=DUMMY.filter(a=>a.title.toLowerCase().includes(q.toLowerCase())||a.summary.toLowerCase().includes(q.toLowerCase())||a.tags?.some(t=>t.name.toLowerCase().includes(q.toLowerCase())));
+    if(!r.length){document.getElementById('s-res').innerHTML='<div class="p-6 text-center text-sm text-gray-400">Tidak ditemukan</div>';return;}
+    document.getElementById('s-res').innerHTML=r.slice(0,8).map(a=>`<a href="${a.ext_link?a.ext_link:'#/artikel/'+a.slug}" ${a.ext_link?'target="_blank"':''} class="flex gap-3 p-4 hover:bg-surface-alt dark:hover:bg-surface-border/50 transition cursor-pointer border-b border-gray-50 dark:border-surface-border/30 last:border-0"><img src="${a.featured_media}" alt="" class="w-16 h-12 rounded-lg object-cover shrink-0" loading="lazy"><div class="min-w-0"><span class="cb ${a.categories?.length?catClsByObj(a.categories):catCls(a.category)} text-[10px] mb-0.5 inline-block">${a.categories?.length?catNameByObj(a.categories):catName(a.category)}</span><h4 class="text-sm font-semibold line-clamp-1">${a.title}</h4><p class="text-xs text-gray-400 mt-0.5">${a.author.name}</p></div></a>`).join('');
+}
+
+/* ========================================================================
+   MOBILE MENU
+   ======================================================================== */
+function toggleMobile(){document.getElementById('mob-menu').classList.toggle('hidden');}
+
+/* ========================================================================
+   EVENT LISTENERS
+   ======================================================================== */
+window.addEventListener('scroll',()=>{const h=document.getElementById('main-header'),b=document.getElementById('btt');if(window.scrollY>10)h.classList.add('shadow-md');else h.classList.remove('shadow-md');if(window.scrollY>400){b.style.opacity='1';b.style.transform='translateY(0)';b.style.pointerEvents='auto';}else{b.style.opacity='0';b.style.transform='translateY(16px)';b.style.pointerEvents='none';}},{passive:true});
+document.getElementById('s-in').addEventListener('input',e=>doSearch(e.target.value));
+document.getElementById('s-in').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=e.target.value.trim();if(q){closeSearch();navigate('/cari/'+encodeURIComponent(q));}}});
+document.getElementById('search-d').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=e.target.value.trim();if(q){e.target.value='';navigate('/cari/'+encodeURIComponent(q));}}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSearch();closeAM();const mm=document.getElementById('mob-menu');if(!mm.classList.contains('hidden'))toggleMobile();}});
+window.addEventListener('hashchange',handleRoute);
+
+/* ========================================================================
+   INIT
+   ======================================================================== */
+applyDark();
+renderTicker();
+handleRoute();
+</script>
+</body>
+</html>
